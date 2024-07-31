@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecureX</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h1>SecureX</h1>
+
+  <!-- Face Authentication -->
+  <h2>Face Authentication</h2>
+  <input type="file" id="faceInput" accept="image/*">
+  <button id="faceAuthButton">Authenticate</button>
+  <div id="faceAuthResult"></div>
+
+  <!-- Authentication and Access Control -->
+  <h2>Authentication</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button id="loginButton">Login</button>
+  <div id="authResult"></div>
+
+  <!-- Data Encryption -->
+  <h2>Data Encryption</h2>
+  <textarea id="dataInput" placeholder="Enter data"></textarea>
+  <button id="encryptDataButton">Encrypt Data</button>
+  <textarea id="encryptedData" readonly></textarea>
+
+  <!-- Image Encryption -->
+  <h2>Image Encryption</h2>
+  <input type="file" id="imageInput" accept="image/*">
+  <button id="encryptButton">Encrypt Image</button>
+  <textarea id="encryptedImage" readonly></textarea>
+
+  <!-- Password Security -->
+  <h2>Password Security</h2>
+  <input type="password" id="passwordInput" placeholder="Enter password">
+  <button id="hashButton">Hash Password</button>
+  <textarea id="hashedPassword" readonly></textarea>
+
+  <script src="popup.js"></script>
+</body>
+</html>
